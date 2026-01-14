@@ -34,7 +34,6 @@ const ShlokaCard = (props) => {
         }
     };
 
-    // Helper function to format verse text
     const formatVerseText = (text) => {
         let formattedText = text.replace(/\n\n+/g, '\n');
         if (formattedText.includes('\n')) return formattedText;
@@ -65,7 +64,6 @@ const ShlokaCard = (props) => {
         return formattedText;
     };
 
-    // Extract speaker and verse text
     const speakers = ["श्री भगवानुवाच", "अर्जुन उवाच", "धृतराष्ट्र उवाच", "सञ्जय उवाच"];
     let speakerText = null;
     let verseText = Shloka.text;
@@ -81,7 +79,7 @@ const ShlokaCard = (props) => {
     const formattedVerseText = formatVerseText(verseText);
 
     return (
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
+        <div className="w-full mx-auto mb-12">
             {/* Chapter Info Header */}
             {chapterDetails && (
                 <div className="mb-6 text-center">

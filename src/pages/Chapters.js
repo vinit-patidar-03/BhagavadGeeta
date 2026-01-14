@@ -14,7 +14,6 @@ const Chapters = () => {
 
     return (
         <div className="min-h-screen devotional-bg">
-            {/* Hero Section - Simple & Peaceful */}
             <div className="pt-32 md:pt-24 pb-12 px-4">
                 <div className="max-w-7xl mx-auto text-center">
                     <h1 className="text-5xl md:text-6xl font-extrabold mb-4 text-amber-900">
@@ -32,8 +31,7 @@ const Chapters = () => {
                 </div>
             </div>
 
-            {/* Chapters Grid - Simple Layout */}
-            <div className='max-w-7xl mx-auto px-4 pb-16'>
+            <div className='max-w-7xl mx-auto pb-16'>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
                     {
                         chapters &&

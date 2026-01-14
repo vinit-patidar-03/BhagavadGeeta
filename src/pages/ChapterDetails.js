@@ -31,7 +31,6 @@ const ChapterDetails = () => {
         fetchChapterData();
         fetchChapterDetails();
         setChaptNO(CNO);
-        // Scroll to top when shloka changes
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }, [CNO, fetchChapterData, fetchChapterDetails, setChaptNO, slokaNO])
 
@@ -51,7 +50,7 @@ const ChapterDetails = () => {
                 </div>
             ) : (
                 shlokas &&
-                <div className="max-w-7xl mx-auto px-4 animate-fade-in delay-200">
+                <div className="max-w-7xl mx-auto animate-fade-in delay-200">
                     <ShlokaCard Shloka={shlokas} chapterDetails={chapterdetails} />
 
                     <div className='flex justify-between items-center my-8 max-w-2xl mx-auto'>

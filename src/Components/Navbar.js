@@ -14,9 +14,8 @@ const Navbar = () => {
 
     return (
         <nav className='bg-white/70 backdrop-blur-md shadow-md fixed top-0 z-50 w-full border-b border-amber-100'>
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto">
 
-                {/* Desktop Layout - Single Row (hidden on mobile) */}
                 <div className="hidden md:flex items-center justify-between h-16">
                     <div className="cursor-pointer" onClick={() => { Navigate('/') }}>
                         <span className="text-amber-800 font-bold text-xl gradient-text" style={{ fontFamily: "'Baloo 2', cursive" }}>
@@ -66,9 +65,7 @@ const Navbar = () => {
                     </div>
                 </div>
 
-                {/* Mobile Layout - Two Rows (visible on mobile only) */}
                 <div className="md:hidden">
-                    {/* Top Row - Title */}
                     <div className="flex items-center justify-center h-14 border-b border-amber-100/50">
                         <div className="cursor-pointer" onClick={() => { Navigate('/') }}>
                             <span className="text-amber-800 font-bold text-lg gradient-text" style={{ fontFamily: "'Baloo 2', cursive" }}>
@@ -77,7 +74,6 @@ const Navbar = () => {
                         </div>
                     </div>
 
-                    {/* Bottom Row - Selects */}
                     <div className="flex items-center justify-center gap-2 py-3">
                         <select
                             name="chapters-mobile"
