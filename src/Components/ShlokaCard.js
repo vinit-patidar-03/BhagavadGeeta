@@ -149,7 +149,7 @@ const ShlokaCard = (props) => {
                         <div className="flex items-center justify-between mb-5">
                             <div className="flex items-center gap-3">
                                 <div className="w-1.5 h-10 bg-gradient-to-b from-amber-600 to-yellow-600 rounded-full"></div>
-                                <h3 className="text-2xl font-bold text-gray-900" style={{ fontFamily: "'Baloo 2', cursive" }}>
+                                <h3 className="text-xl md:text-2xl font-bold text-gray-900" style={{ fontFamily: "'Baloo 2', cursive" }}>
                                     Translation
                                 </h3>
                             </div>
@@ -160,7 +160,9 @@ const ShlokaCard = (props) => {
                                     className="px-3 py-1.5 text-sm border-2 border-amber-200 rounded-lg bg-white hover:border-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-500 transition-colors"
                                 >
                                     {Shloka.translations.map((trans, index) => (
-                                        <option key={index} value={index}>{trans.author_name}</option>
+                                        <option key={index} value={index}>
+                                            {trans.author_name.length > 20 ? trans.author_name.substring(0, 20) + '...' : trans.author_name}
+                                        </option>
                                     ))}
                                 </select>
                             )}
@@ -184,7 +186,7 @@ const ShlokaCard = (props) => {
                         <div className="flex items-center justify-between mb-5">
                             <div className="flex items-center gap-3">
                                 <div className="w-1.5 h-10 bg-gradient-to-b from-blue-600 to-indigo-600 rounded-full"></div>
-                                <h3 className="text-2xl font-bold text-gray-900" style={{ fontFamily: "'Baloo 2', cursive" }}>
+                                <h3 className="text-xl md:text-2xl font-bold text-gray-900" style={{ fontFamily: "'Baloo 2', cursive" }}>
                                     Commentary
                                 </h3>
                             </div>
@@ -195,7 +197,9 @@ const ShlokaCard = (props) => {
                                     className="px-3 py-1.5 text-sm border-2 border-blue-200 rounded-lg bg-white hover:border-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors"
                                 >
                                     {Shloka.commentaries.map((comm, index) => (
-                                        <option key={index} value={index}>{comm.author_name}</option>
+                                        <option key={index} value={index}>
+                                            {comm.author_name.length > 20 ? comm.author_name.substring(0, 20) + '...' : comm.author_name}
+                                        </option>
                                     ))}
                                 </select>
                             )}

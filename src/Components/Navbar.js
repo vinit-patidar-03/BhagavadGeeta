@@ -106,7 +106,7 @@ const Navbar = () => {
                         </select>
 
                         <button
-                            className='bg-gradient-to-r from-amber-600 to-yellow-600 hover:from-amber-700 hover:to-yellow-700 text-white font-bold py-2 px-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center group text-xs'
+                            className='bg-gradient-to-r from-amber-600 to-yellow-600 hover:from-amber-700 hover:to-yellow-700 text-white font-bold py-3 px-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center group text-xs'
                             disabled={slokaNO === 0 || chaptNO === 0}
                             onClick={() => { Navigate(`/chapter/${chaptNO}`); setSlokaNo(parseInt(slokaNO)) }}
                         >
